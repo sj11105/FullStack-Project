@@ -1,0 +1,18 @@
+[
+  {
+    "image": "path/to/art1.jpg",
+    "title": "Art Piece 1",
+    "artist": "Artist 1",
+    "description": "This is a beautiful piece of art.",
+    "likes": 10,
+    "comments": ["Amazing!", "Love it!"]
+  },
+  {
+    "image": "path/to/art2.jpg",
+    "title": "Art Piece 2",
+    "artist": "Artist 2",
+    "description": "Another beautiful piece of art.",
+    "likes": 5,
+    "comments": ["Wonderful!", "Incredible!"]
+  }
+]
