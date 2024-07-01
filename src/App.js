@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import ArtGallery from './components/ArtGallery';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
+import Gallery from './components/ArtGallery';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-   <h1>Virtual ShowCase</h1>
-   <ArtGallery />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
