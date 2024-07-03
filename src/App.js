@@ -3,7 +3,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
-import Gallery from './components/ArtGallery';
+import './App.css';
+import ArtGallery from './components/ArtGallery';
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/ArtGallery" element={<ArtGallery />} />
       </Routes>
     </Router>
   );

@@ -49,7 +49,7 @@ const Register = () => {
                 </select>
                 <input type="file" onChange={handleFileChange} />
                 <textarea placeholder="Bio" value={bio} onChange={(e) => setBio(e.target.value)}></textarea>
-                <button type="submit">Register</button>
+                <button type="submit" className='registerbtn'>Register</button>
             </form>
         </div>
     );

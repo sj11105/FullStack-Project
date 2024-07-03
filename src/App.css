@@ -158,3 +158,35 @@ body {
 .form-container a:hover {
   color: #0056b3;
 }
+.login-container{
+
+  margin-top: 80px;
+
+  margin-left: 550px;
+  
+  
+}
+.heading{
+margin-left: 570px;
+}
+input{
+  width: 200px;
+  height: 30px;
+  border-radius: 80px;
+
+}
+.Loginbtn{
+  border-radius: 100px;
+  padding: 12px;
+background-color: rgb(223, 206, 185);
+  margin-left: 70px;
+  text-align: center;
+  justify-content: center;
+}
+.register-container{
+  margin-top: 50px;
+  border-radius: 50px;
+  height: 520px;
+}
+
+

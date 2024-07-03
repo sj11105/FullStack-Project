@@ -21,15 +21,20 @@ const Login = () => {
   };
 
   return (
+    <>
+    <div className='lcont'>
+    <h2 className='heading'>Welcome Back!</h2>
     <div className="login-container">
-      <h2>Login</h2>
+      
       <form onSubmit={handleLogin}>
-        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <button type="submit">Login</button>
-      </form>
+        <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} required /><br></br><br></br>
+        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required /><br></br><br></br>
+        <button type="submit" className='Loginbtn'>Login</button><br></br>
+      </form><br></br>
       <p>Don't have an account? <Link to="/register">Register</Link></p>
     </div>
+    </div>
+    </>
   );
 };
 
