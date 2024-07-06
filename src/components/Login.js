@@ -22,8 +22,12 @@ const Login = () => {
 
   return (
     <>
+    <div className='imgdiv' >
+      <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+      </div>
+      <h2 className='heading'>Travel the World Of Art With Us</h2>
     <div className='lcont'>
-    <h2 className='heading'>Welcome Back!</h2>
+    
     <div className="login-container">
       
       <form onSubmit={handleLogin}>

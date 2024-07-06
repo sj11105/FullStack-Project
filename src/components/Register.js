@@ -38,6 +38,7 @@ const Register = () => {
     };
 
     return (
+        <div>
         <div className="register-container">
             <h2>Register</h2>
             <form onSubmit={handleRegister}>
@@ -49,8 +50,11 @@ const Register = () => {
                 </select>
                 <input type="file" onChange={handleFileChange} />
                 <textarea placeholder="Bio" value={bio} onChange={(e) => setBio(e.target.value)}></textarea>
-                <button type="submit" className='registerbtn'>Register</button>
+                  <button type="submit" className='registerbtn'>Register</button>
             </form>
+            
+        </div>
+        <div className='registerimg'><img src="https://i.pinimg.com/originals/a3/98/59/a39859d44ad68f19326456c71900eaf6.gif" alt="" /></div>
         </div>
     );
 };
