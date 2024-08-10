@@ -1,0 +1,359 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.art-gallery {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.art-piece {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.art-piece:hover {
+  transform: scale(1.05);
+}
+
+.art-piece img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.art-piece h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.art-piece p {
+  margin: 10px 0;
+}
+
+.art-image {
+  width: 200px;
+  height: 250px;
+}
+
+.likes button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.likes button:hover {
+  background-color: #e5533d;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comments li {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comments button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comments button:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container p {
+  margin: 0;
+  text-align: center;
+}
+
+.form-container a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.form-container a:hover {
+  color: #0056b3;
+}
+
+.heading {
+  margin-left: 800px;
+  margin-top: 150px;
+  position: absolute;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.register-container {
+  margin-top: 100px;
+  border-radius: 50px;
+  height: 520px;
+  margin-left: 150px;
+}
+
+.nav {
+  margin-left: 1150px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.registerimg {
+  margin-left: 700px;
+  width: 500px;
+  margin-top: -400px;
+}
+
+.registerimg img {
+  border-radius: 80px;
+}
+
+.profile {
+  width: 100px;
+  height: 30px;
+}
+
+.lcont {
+  margin-top: 150px;
+  width: 100vh;
+  height: 300px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.imgdiv {
+  position: absolute;
+}
+
+.imgdiv img {
+  width: 600px;
+  height: 700px;
+  margin-top: 5px;
+  opacity: 0.5;
+  border-radius: 60px;
+  margin-left: 10px;
+}
+
+.pcont button {
+  font-size: 0.9em;
+  background: linear-gradient(90deg, rgba(233, 194, 17, 1) 0%, rgba(240, 197, 22, 1) 45%, rgba(235, 139, 21, 1) 100%);
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pcont {
+  border-radius: 50px;
+  width: 400px;
+  height: 550px;
+  margin-left: 35vw;
+  margin-top: 20vh;
+  border: 2px solid black;
+  text-align: center;
+  display: block;
+}
+
+.pic {
+  border-radius: 50%;
+  margin-top: -60px;
+  border: none;
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  margin-left: 80px;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.featured-works {
+  margin-top: 120px;
+}
+
+.caraousel {
+  width: 900px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.work-grid {
+  display: flex;
+  gap: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.work {
+  margin-left: 500px;
+  font-weight: bold;
+}
+
+.navbar {
+  margin-top: 60px;
+  color: black;
+}
+
+.profileimg {
+  margin-left: 800px;
+  width: 500px;
+  margin-top: -500px;
+}
+
+.profileimg img {
+  border-radius: 80px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure popup is above all other content */
+}
+
+.popup-inner {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px; /* Set a max-width to ensure it doesn't stretch too wide */
+}
+
+.popup-inner h2 {
+  margin-bottom: 10px;
+}
+
+.popup-inner input,
+.popup-inner textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-inner button {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  background: linear-gradient(90deg, rgba(233, 194, 17, 1) 0%, rgba(240, 197, 22, 1) 45%, rgba(235, 139, 21, 1) 100%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,144 @@
+.login-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-page .navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.login-container {
+  position: relative;
+  top: 20vh;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-page .login-form-container .lcont {
+  width: 100%;
+  height: 300px;
+  margin-left: 300px; /* Adjust as needed */
+  position: absolute;
+}
+
+.login-page .login-form-container .heading {
+  margin-left: 80px; /* Adjust as needed */
+  margin-top: 150px; /* Adjust as needed */
+  position: absolute;
+}
+
+.Loginbtn {
+  border-radius: 80px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgba(233, 194, 17, 1) 0%, rgba(240, 197, 22, 1) 45%, rgba(235, 139, 21, 1) 100%);
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.login-page .login-form-container .login-container {
+  margin-top: 20px; /* Adjust as needed */
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.login-page .login-form-container .login-container form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-page .login-form-container .login-container .error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.login-page .login-form-container .login-container p {
+  margin: 0;
+  text-align: center;
+}
+
+.login-page .login-form-container .login-container a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.login-page .login-form-container .login-container a:hover {
+  color: #0056b3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: moveBackground 20s linear infinite;
+  z-index: -1;
+}
+
+.background .image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes moveBackground {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.login-form {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: auto;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+}

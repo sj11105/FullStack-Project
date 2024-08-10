@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.background-1 {
+    position: fixed; /* Fixed positioning */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflow to prevent scrolling effects */
+    z-index: -1; /* Place behind other elements */
+    display: flex; /* Flexbox for background images */
+    animation: moveBackground 20s linear infinite; /* Animation for continuous movement */
+}
+
+.background-1 .image {
+    flex: 1; /* Ensure images take up equal space */
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+@keyframes moveBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.register-form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    z-index: 1; /* Ensure it’s above the background */
+    position: relative; /* Ensures stacking context */
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    margin-left: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(233,194,17,1) 0%, rgba(240,197,22,1) 45%, rgba(235,139,21,1) 100%);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #e2b917;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+}

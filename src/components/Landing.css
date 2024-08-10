@@ -1,0 +1,47 @@
+/* Landing.css */
+
+.LandingBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Adjust width as needed */
+  margin: 20px auto;
+  gap: 50px;
+  padding: 5px;
+}
+
+.gif {
+  flex: 1;
+  text-align: center;
+}
+
+.gif2 img{
+  height: 200px;
+}
+
+.gif2 {
+  flex: 1;
+  padding-left: 20px; 
+}
+
+.gif2
+.head {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.para {
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Additional styles for NavigationBox and ArtCarousel can be added here */

@@ -1,0 +1,89 @@
+/* ArtGallery.css */
+
+.art-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .art-piece {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(50% - 40px); /* Two columns with some margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    box-sizing: border-box;
+  }
+  
+  .art-piece:hover {
+    transform: scale(1.05);
+  }
+  
+  .art-piece img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .art-piece h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .art-piece p {
+    margin: 10px 0;
+  }
+  
+  .caraousel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+  
+  .caraousel-item {
+    display: inline-block;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-control button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .carousel-control button:hover {
+    background-color: #0056b3;
+  }
+  
+  .carousel-control .left-arrow {
+    transform: rotate(180deg);
+  }
+  
+
+.caraousel {
+    width: 700px; /* Adjusted size for smaller carousel */
+    margin-left: 50px;
+    margin-top: 50px;
+}
